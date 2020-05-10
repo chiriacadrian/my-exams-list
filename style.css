@@ -1,0 +1,36 @@
+.fa-exam-open {
+    margin-right: 20px;
+}
+
+td {
+    padding: 0;
+    vertical-align: middle;
+}
+
+.table-bordered th, .table-bordered td {
+    border: none;
+}
+
+.table {
+    overflow: auto;
+}
+
+.table th {
+    border-top: 1px solid #dee2e6;
+}
+
+.form-control:focus{
+    border-color: #f04124;
+    -webkit-box-shadow: none;
+    box-shadow: 0px 0px 5px #f04124;
+}
+
+@media only screen and (max-width: 400px) {
+    .mobile-title {
+        font-size: 36px;
+    }
+
+    .mobile-subtitle {
+        font-size: 24px;
+    }
+}

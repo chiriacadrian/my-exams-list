@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/36f3bc8225.js"></script>
+  <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>My Exams List</title>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <h1 class="display-4 text-center font-weight-bold mobile-title">
+      <i class="fas fa-book-open text-danger fa-lg"></i> My<span class="text-danger">Exams</span>List
+    </h1>
+    <h1 class="display-5 text-center mobile-subtitle" style="margin: 20px 0">
+      Keep track of your next exams.
+    </h1>
+    <form id="exam-form">
+      <div class="form-group">
+        <label for="name">Exam</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter the name of your exam">
+      </div>
+      <div class="form-group">
+        <label for="professor">Professor</label>
+        <input type="text" id="professor" class="form-control" placeholder="Enter the name of your professor">
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="text" id="date" class="form-control" placeholder="Enter the date of your exam">
+      </div>
+      <input type="submit" value="Add Exam" class="btn btn-dark btn-block">
+    </form>
+    <table class="table table-bordered mt-5">
+      <thead class="thead-light">
+        <tr>
+          <th>Exam</th>
+          <th>Professor</th>
+          <th>Date</th>
+          <th></th>
+        </tr>
+      <tbody id="exam-list">
+      </tbody>
+      </thead>
+    </table>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
